@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Task Example</title>
+
+
+    <link rel="stylesheet" href="/css/style.css">
+
+            <style>
+        h1{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Heading -->
+    <h1><center>Saylani Web Development Class Task: Trainer SAMMAR ABBAS</center></h1>
+
+    <hr>
+
+    <!-- Paragraph with formatting -->
+    <!-- <p style="color: royalblue;">
+        This is a <b>basic HTML practice</b>.  
+        HTML is <i>easy to learn</i> and <u>very important</u> for web development.  
+    </p> -->
+
+    <!-- Anchor tag -->
+    <!-- <p style="color: green;">
+        Visit my favorite website: 
+        <a href="https://www.google.com" target="_blank">Google</a>
+    </p> -->
+
+    <hr>
+
+    <div>
+        <p>This is direct child</p>
+        <section>
+            <p>This is indirect child</p>
+        </section>
+        <p>This is another direct child</p>
+    </div>
+
+    <p>This is element</p>
+    <p>This is element 2</p>
+
+    <div>
+        <p class="text-alignment background">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente praesentium porro nemo accusantium facilis. Similique amet, quas blanditiis ratione provident eius atque voluptates nostrum doloremque placeat sed consequatur ut fugit!             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor fugit fugiat veritatis, velit facere deleniti tempora atque recusandae optio aperiam, aliquam architecto provident totam quia, impedit officiis quis quaerat officia!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor fugit fugiat veritatis, velit facere deleniti tempora atque recusandae optio aperiam, aliquam architecto provident totam quia, impedit officiis quis quaerat officia!
+
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor fugit fugiat veritatis, velit facere deleniti tempora atque recusandae optio aperiam, aliquam architecto provident totam quia, impedit officiis quis quaerat officia!
+        </p>
+    </div>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem repellat doloremque accusantium iure quos quasi odit soluta, sapiente, voluptatibus, numquam eos hic necessitatibus eveniet in? Voluptatibus atque consequatur nam ab.</p>
+    </div>
+
+    <p>Thi is outside div</p>
+
+    <!-- Table -->
+    <h2 id="title">Sample Table</h2>
+    <table class="background" border="1px" cellpadding="5" cellspacing="1">
+        <caption>Student Information</caption>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Ali</td>
+            <td>20</td>
+            <td>Pakistan</td>
+        </tr>
+        <tr>
+            <td>Sara</td>
+            <td>22</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>25</td>
+            <td>UK</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- Form -->
+    <h2>Registration Form</h2>
+    <form class="background">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        Gender:
+        <input type="radio" id="male" name="gender" value="male"> Male
+        <input type="radio" id="female" name="gender" value="female"> Female
+        <br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="Pakistan">Pakistan</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Canada">Canada</option>
+            <option value="India">India</option>
+        </select>
+        <br><br>
+
+        <label for="course">Select Course:</label>
+        <select id="course" name="course">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="react">React</option>
+        </select>
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <!-- Preformatted text -->
+    <h2>Preformatted Text Example</h2>
+    <pre>
+        Line 1: Hello World!
+        Line 2: This text preserves    spacing and line breaks.
+        Line 3: HTML <pre> tag is useful for code snippets.
+    </pre>
+
+    <hr>
+
+    <!-- Image tag -->
+    <h2>Image Example</h2>
+    <img src="../images/cat-image.jpg" alt="Sample Image" width="200">
+
+    <hr>
+
+    <!-- Video tag -->
+    <h2>Video Example</h2>
+    <video width="320" height="240" controls>
+        <source src="../videos/cat.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+</body>
+</html>

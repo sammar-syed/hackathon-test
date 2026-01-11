@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #link-one:link {
+        color: red;
+      }
+      #link-two:visited {
+        color: aqua;
+      }
+      #link-three:hover {
+        background-color: aquamarine;
+        padding: 10px;
+        border: 1px solid tomato;
+        border-radius: 10px;
+        color: chocolate;
+        text-decoration: none;
+      }
+      #link-four:active {
+        color: black;
+        font-family: mistral;
+        font-size: 50px;
+        background-color: coral;
+        border: 1px dotted purple;
+        border-radius: 10px;
+        padding: 20px;
+      }
+      #dropCase::first-letter {
+        font-size: 50px;
+        color: maroon;
+        font-weight: 50px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      #dropCase::first-line {
+        background-color: aquamarine;
+      }
+      #dropCase {
+        text-indent: 8%;
+        text-shadow: 30px 30px 10px yellowgreen;
+        /* letter-spacing: 2px; */
+        word-spacing: 12px;
+      }
+
+      #paraOne:hover {
+        background-color: antiquewhite;
+        padding: 40px;
+        margin: 30px;
+        border: 1px solid rebeccapurple;
+        border-radius: 20px;
+        transition-duration: 2s;
+      }
+      #hiddenPara {
+        display: none;
+        background-color: green;
+        color: white;
+        border: 1px dotted yellow;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 40px;
+        box-shadow: 0px 20px 60px blue;
+        transition-duration: 2s;
+        text-decoration: overline;
+      }
+      #hoverMe:hover #hiddenPara {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Pseudo Class -->
+    <!-- Tooltip -->
+    <div id="hoverMe">
+      Please hover me to show the paragraph tag below!
+      <p id="hiddenPara">Hello, Bhai men agayaaaa!</p>
+    </div>
+
+    <div>
+      <h1>
+        This is the example of
+        <a href="#" id="link-one">unvisited link</a> using pseudo class
+      </h1>
+      <h1>
+        This is the example of
+        <a href="#" id="link-two">unvisited link</a> using pseudo class
+      </h1>
+      <h1>
+        This is the example of
+        <a href="#" id="link-three">unvisited link</a> using pseudo class
+      </h1>
+      <h1>
+        This is the example of
+        <a href="#" id="link-four">unvisited link</a> using pseudo class
+      </h1>
+    </div>
+
+    <div>
+      <p id="dropCase">
+        Imran Ahmed Khan Niazi (born 5 October 1952) is a Pakistani politician,
+        philanthropist, and former cricketer who served as the 19th prime
+        minister of Pakistan from August 2018 until April 2022. He is the
+        founder of the political party Pakistan Tehreek-e-Insaf (PTI) and was
+        its chairman from 1996 toImran Ahmed Khan Niazi (born 5 October 1952) is
+        a Pakistani politician, philanthropist, and former cricketer who served
+        as the 19th prime minister of Pakistan from August 2018 until April
+        2022. He is the founder of the political party Pakistan Tehreek-e-Insaf
+        (PTI) and was its chairman from 1996 toImran Ahmed Khan Niazi (born 5
+        October 1952) is a Pakistani politician, philanthropist, and former
+        cricketer who served as the 19th prime minister of Pakistan from August
+        2018 until April 2022. He is the founder of the political party Pakistan
+        Tehreek-e-Insaf (PTI) and was its chairman from 1996 to
+      </p>
+    </div>
+
+    <div id="paraOne">
+      <p>
+        He is the founder of the political party Pakistan Tehreek-e-Insaf (PTI)
+        and was its chairman from 1996 toImran Ahmed Khan Niazi (born 5 October
+        1952) is a Pakistani politician, philanthropist, and former cricketer
+        who served as the 19th prime minister of Pakistan from August 2018 until
+        April 2022.
+      </p>
+    </div>
+  </body>
+</html>

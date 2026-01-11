@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container {
+        background-color: maroon;
+        display: grid;
+        grid-template-columns: repeat(5, 100px);
+        grid-template-rows: repeat(5, 100px);
+        /* row-gap: 20px; */
+        padding: 10px;
+        /* column-gap: 2px; */
+        gap: 20px;
+        justify-content: center;
+      }
+      .grid-item {
+        background-color: white;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .item{
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 7;
+      }
+      .row-item{
+        grid-row-start: 3;
+        grid-row-end: 6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid-item">1 - takes 10% spaces</div>
+      <div class="grid-item item">2 - takes 30% spaces</div>
+      <div class="grid-item row-item">3 - takes 20% spaces</div>
+      <div class="grid-item">4 - takes 30% spaces</div>
+      <div class="grid-item">5 - takes 10% spaces</div>
+      <div class="grid-item">6 - takes 10% spaces</div>
+      <div class="grid-item">7 - takes 10% spaces</div>
+      <div class="grid-item">8 - takes 10% spaces</div>
+      <div class="grid-item">9 - takes 10% spaces</div>
+      <div class="grid-item">10 - takes 10% spaces</div>
+      <div class="grid-item">10 - takes 10% spaces</div>
+      <div class="grid-item">10 - takes 10% spaces</div>
+    </div>
+  </body>
+</html>

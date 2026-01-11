@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .card {
+        width: 300px;
+        background-color: rgb(232, 232, 232);
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+      }
+      .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .card p {
+        font-size: 23px;
+        color: maroon;
+        margin: 15px 0;
+        padding: 20px;
+      }
+      .container{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img src="../images/cat-1.jpg" alt="" />
+        <p>CAT ONE</p>
+      </div>
+      <div class="card">
+        <img src="../images/cat-2.jpg" alt="" />
+        <p>CAT TWO</p>
+      </div>
+      <div class="card">
+        <img src="../images/cat-4.jpg" alt="" />
+        <p>CAT THREE</p>
+      </div>
+    </div>
+  </body>
+</html>

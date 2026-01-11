@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Masking using CSS</title>
+    <style>
+      .mask1 {
+        -webkit-mask-image: url("../images/colored-logo.png");
+        mask-image: url("../images/colored-logo.png");
+        mask-repeat: no-repeat;
+      }
+
+        .mask2 {
+        -webkit-mask-image: linear-gradient(black, transparent);
+        mask-image: linear-gradient(black, transparent);
+      }
+        .mask3 {
+        -webkit-mask-image: radial-gradient(circle, black 50%, rgba(0,0,0, 0.5)40%);
+        mask-image: radial-gradient(circle, black 50%, rgba(0,0,0, 0.5)40%);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="background-color: tomato; text-align: center; color: white">
+      Image Masking Using CSS
+    </h1>
+
+    <h2>Image View with Image Masking</h2>
+    <div class="mask1">
+      <img src="../images/cat-image.jpg" alt="" width="600px" />
+    </div>
+
+    <h2>Image Masking - Linear Gradient</h2>
+    <div >
+      <img src="../images/cat-image.jpg" alt="" width="600px" class="mask2" />
+    </div>
+
+        <h2>Image Masking - Radial Gradient</h2>
+    <div >
+      <img src="../images/cat-image.jpg" alt="" width="600px" class="mask3" />
+    </div>
+
+    <h2>Orignal Image View</h2>
+    <div>
+      <img src="../images/cat-image.jpg" alt="" width="200px" />
+    </div>
+  </body>
+</html>

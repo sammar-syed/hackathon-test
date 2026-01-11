@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Layout Fixed</title>
+
+  <style>
+    body {
+      background-color: aquamarine;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 200px 1fr 1fr;  /* sidebar + 2 content columns */
+      grid-template-rows: auto 1fr auto;      /* header + main + footer */
+      gap: 10px;
+      width: 90%;
+      margin: 0 auto;
+      align-items: stretch;                   /* ensures equal height in same row */
+    }
+
+    .box {
+      background-color: azure;
+      padding: 15px;
+      border: 1px solid salmon;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .header {
+      grid-column: 1 / 4;  /* span all columns */
+    }
+
+    .sidebar {
+      grid-row: 2 / 3;     /* second row only */
+      grid-column: 1 / 2;
+    }
+
+    .content1 {
+      grid-row: 2 / 3;     /* same row as sidebar */
+      grid-column: 2 / 4;  /* span two columns */
+    }
+
+    .footer {
+      grid-column: 1 / 4;  /* span all columns */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box header">Header</div>
+    <div class="box sidebar">Sidebar</div>
+    <div class="box content1">Content 1</div>
+    <div class="box footer">Footer</div>
+  </div>
+
+</body>
+</html>

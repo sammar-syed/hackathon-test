@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image in Background with text overlay</title>
+
+    <style>
+        #bgTransparent{
+            background-image: url('../images/nature.jpg');
+            height: 50vh;
+            background-size: cover;
+            background-position: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+
+
+        }
+        #textPosition{
+            color: white;
+            font-size: 40px;
+            background-color: rgba(124, 104, 238, 0.61);
+            padding: 40px;
+            text-align: center;
+        }
+        #textPosition:hover{
+            background-color: rgba(95, 158, 160, 0.564);
+        }
+    </style>
+  </head>
+  <body>
+    <div id="bgTransparent">
+      <p id="textPosition">This is Overlay text with background!</p>
+    </div>
+  </body>
+</html>

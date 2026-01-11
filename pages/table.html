@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Working with Tables in HTML</title>
+    <style>
+      table {
+        /* border-collapse: collapse; */
+        border-spacing: 18px;
+        caption-side: bottom;
+        empty-cells: show;
+        width: 50%;
+      }
+
+      th {
+        
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- TABLES IN HTML -->
+    <table border="1px" cellpadding="30px" >
+      <caption>
+        Student's Record
+      </caption>
+      <thead>
+        <tr>
+          <th colspan="2">Names</th>
+          <th colspan="2">Address</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td rowspan="2"></td>
+          <td>Mobile App</td>
+          <td>Khairpur</td>
+          <td>0334456575</td>
+        </tr>
+
+        <tr>
+          <!-- <td>Ahmed</td> -->
+          <td colspan="3">
+            <center>IT Essentials</center>
+          </td>
+          <!-- <td>Sukkur</td>
+                <td>45944385532</td> -->
+        </tr>
+        <tr>
+          <td>Abbas</td>
+          <td>Mobile App</td>
+          <td>Khairpur</td>
+          <td>0334456575</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Abbas</td>
+          <td>Mobile App</td>
+          <td>Khairpur</td>
+          <td>0334456575</td>
+        </tr>
+        <tr>
+          <!-- <td >Masood</td> -->
+          <td>Mobile App</td>
+          <td>Khairpur</td>
+          <td>0334456575</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">
+            <center>FOOTER</center>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Animation Task</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background: blue;
+      margin: 50px;
+      border-radius: 50%;
+      position: relative;
+
+      animation-name: moveBox;              
+      animation-duration: 4s;               
+      animation-iteration-count: infinite;  
+      animation-direction: alternate;      
+      animation-delay: 2s;                  
+      animation-timing-function: ease-in-out; 
+    }
+
+    @keyframes moveBox {
+      0% {
+        left: 0;
+        background: blue;
+      }
+      50% {
+        left: 300px;
+        background: red;
+      }
+      100% {
+        left: 0;
+        background: green;
+      }
+    }
+  </style>
+</head>
+<body>
+    <h1>
+        This colored ball will move forward and then backward using (animation-direction: alternate); property of animation.
+    </h1>
+  <div class="box"></div>
+</body>
+</html>

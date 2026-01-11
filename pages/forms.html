@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+
+</head>
+
+<body>
+    <hr />
+    <!-- Working with Forms in HTML -->
+    <hr />
+    <center>
+        <h5>
+            <marquee>Contact Form</marquee>
+        </h5>
+    </center>
+    <center>
+        <h5>
+            <marquee direction="right">Contact Form</marquee>
+        </h5>
+    </center>
+    <center>
+        <h5>
+            <marquee direction="up">Contact Form</marquee>
+        </h5>
+    </center>
+    <center>
+        <h5>
+            <marquee direction="down">Contact Form</marquee>
+        </h5>
+    </center>
+    <hr />
+
+    <div>
+        <form action="/index.html">
+            <label for="fullname">Full Name:</label>
+            <input type="text" name="fullname" id="fname" placeholder="Enter Name">
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="phone">Contact Number:</label>
+            <input type="text" name="number" id="mobile">
+            <br>
+            <p>Please Select Courses:</p>
+            <input type="radio" name="fav_langauge" id="HTML" value="Hasnain">
+            <label for="HTML">HTML</label>
+            <br>
+            <input type="radio" name="fav_langauge" id="CSS" value="CSS">
+            <label for="CSS">CSS</label>
+            <br>
+            <input type="radio" name="fav_langauge" id="Java" value="Java">
+            <label for="CSS">Java</label>
+
+            <br>
+            <p>Please Select Language:</p>
+
+            <input type="checkbox" name="english" id="english" value="ENGLISH">
+            <label for="english">English</label>
+
+            <input type="checkbox" name="urdu" id="urdu" value="URDU">
+            <label for="Urdu">Urdu</label>
+
+            <input type="checkbox" name="sindhi" id="sindhi" value="SINDHI">
+            <label for="Sindhi">Sindhi</label>
+
+            <br>
+            <p>Please Select color:</p>
+            <input type="color" name="" id="" value="#BF70D6">
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" name="pwd" id="pwd">
+            <br><br>
+
+            <p>Please select date:</p>
+            <input type="date" name="date" id="date">
+            <br><br>
+
+            <p>Please select date-time:</p>
+            <input type="datetime-local" name="date-time" id="date-time">
+            <br><br>
+
+            <!-- Select Tag -->
+
+            <select id="courses" name="courses" required>
+                <option value="" disabled selected> -- Please Select --</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Graphic Design">Graphic Design</option>
+                <option value="IT Essentials">IT Essentials</option>
+            </select>
+            <br><br>
+
+            <input type="file" name="" id="">
+            <br><br>
+            <!-- <input type="image" src="/images/cat-image.jpg" id="" width="80px"> -->
+
+            <textarea rows="15" cols="50">
+
+        </textarea>
+
+            <br>
+            <input type="month" id="" name="">
+            <!-- <input type="search"> -->
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            <br>
+            <input type="submit">
+            <input type="reset" name="" id="" value="reset">
+        </form>
+    </div>
+
+    <!-- Working with List -->
+
+    <div>
+        <blockquote cite="https://www.goodreads.com/quotes">
+            Be yourself; everyone else is already taken.
+        </blockquote>
+    </div>
+
+</body>
+
+</html>
