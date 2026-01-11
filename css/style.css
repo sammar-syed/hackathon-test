@@ -1,0 +1,45 @@
+* {
+  font-size: 20px;
+  font-family: "times new roman";
+  font-weight: 200;
+  font-style: underline;
+}
+#title {
+  color: red;
+}
+
+/* h1 {
+  color: rgb(0, 255, 132);
+  font-family: "calibri";
+} */
+
+/* p{
+    text-align: center;
+    color:red;
+} */
+.background {
+  background-color: aquamarine;
+  padding: 50px;
+  margin: 60px;
+}
+.text-alignment {
+  text-align: justify;
+  margin-top: 50px;
+
+}
+
+/* This is comment */
+
+/* Thi
+    is 
+    multiline
+    comment 
+*/
+/* div p{
+    color: brown;
+} */
+
+div + p{
+    font-size: 50px;
+    font-style: italic;
+}
